@@ -1,0 +1,16 @@
+showcase cool component examples:
+ - Drag Carousel (GS&F About Page)
+ - Numbered Carousel (GS&F About Page)
+ - Product Lit Search & Filter Bubbles
+ - 3.0 Custom Carousel Gallery
+ - Halloween OAuth Login/Logout/Vote
+ - Parallax Smooth Scroll
+ - Custom Cursor
+ - Image Rotation (Old GS&F)
+ - Full Page Carousel Lock (GS&F Work Page)
+ - Old GS&F Home page
+ - Custom Carousel (STS Overview Page)
+ - 3D Model Viewer & Controller (old)
+ - In-place image grid with continuous dolly-zoom modal effect
+ - Fun letters as you type using two.js
+ - 3d floating cubes with image/video texture wrappers

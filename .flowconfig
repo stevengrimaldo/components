@@ -1,0 +1,20 @@
+[ignore]
+*/node_modules/.*[^e]\.json$
+*/node_modules/.*\(lib\|test\).*\.json$
+*/node_modules/styled-components/.*
+*/.storybook
+*/build
+
+[include]
+*/src
+
+[options]
+esproposal.optional_chaining=enable
+module.name_mapper='^@components/4.0\/\(.*\)$' -> '<PROJECT_ROOT>/client/src/components/4.0/\1'
+module.name_mapper='^@components/4.0$' -> '<PROJECT_ROOT>/client/src/components/4.0'
+module.name_mapper='^@components/3.0\/\(.*\)$' -> '<PROJECT_ROOT>/client/src/components/3.0/\1'
+module.name_mapper='^@components/3.0$' -> '<PROJECT_ROOT>/client/src/components/3.0'
+module.name_mapper='^@global\/\(.*\)$' -> '<PROJECT_ROOT>/client/src/global/\1'
+module.name_mapper='^@global$' -> '<PROJECT_ROOT>/client/src/global'
+module.name_mapper='^@layouts\/\(.*\)$' -> '<PROJECT_ROOT>/client/src/layouts/\1'
+module.name_mapper='^@layouts$' -> '<PROJECT_ROOT>/client/src/layouts'

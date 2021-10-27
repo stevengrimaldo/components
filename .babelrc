@@ -1,0 +1,17 @@
+{
+  "plugins": [
+    "after",
+    [
+      "styled-components",
+      {
+        "displayName": false,
+        "fileName": true,
+        "minify": true,
+        "pure": true,
+        "ssr": true
+      }
+    ],
+    "@babel/plugin-transform-flow-strip-types"
+  ],
+  "presets": ["razzle/babel", "@babel/preset-flow"]
+}

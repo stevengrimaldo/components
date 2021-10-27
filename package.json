@@ -1,0 +1,115 @@
+{
+  "browserslist": [
+    "last 2 versions",
+    "> 0.2%",
+    "not dead",
+    "not ie <= 10"
+  ],
+  "name": "after-examples-basic",
+  "version": "0.1.0",
+  "license": "MIT",
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "es6": true,
+      "node": true
+    },
+    "extends": [
+      "plugin:flowtype/recommended",
+      "plugin:prettier/recommended",
+      "plugin:react/recommended",
+      "prettier",
+      "prettier/flowtype",
+      "prettier/react"
+    ],
+    "parser": "babel-eslint",
+    "plugins": [
+      "flowtype",
+      "prettier",
+      "react",
+      "react-hooks"
+    ],
+    "rules": {
+      "comma-dangle": [
+        "error",
+        "only-multiline"
+      ],
+      "prettier/prettier": [
+        "error",
+        {
+          "bracketSpacing": true,
+          "jsxBracketSameLine": false,
+          "overrides": [
+            {
+              "files": "*.js",
+              "options": {
+                "parser": "flow"
+              }
+            }
+          ],
+          "parse": "flow",
+          "printWidth": 80,
+          "semi": true,
+          "singleQuote": true,
+          "tabWidth": 2,
+          "trailingComma": "es5",
+          "useTabs": false
+        }
+      ],
+      "react/display-name": 0,
+      "react-hooks/exhaustive-deps": "error",
+      "react/prop-types": 0,
+      "react-hooks/rules-of-hooks": "error",
+      "sort-keys": "error"
+    },
+    "settings": {
+      "flowtype": {
+        "onlyFilesWithFlowAnnotation": true
+      }
+    }
+  },
+  "eslintIgnore": [
+    "build",
+    "node_modules"
+  ],
+  "scripts": {
+    "start": "razzle start",
+    "build": "razzle build",
+    "lint": "esw -f stylish --color src",
+    "test": "razzle test --env=jsdom",
+    "start:prod": "NODE_ENV=production node build/server.js"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-flow-strip-types": "^7.13.0",
+    "@babel/preset-flow": "^7.12.13",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-after": "^3.1.3",
+    "babel-plugin-styled-components": "^1.12.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-flowtype": "^4.6.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^2.5.0",
+    "eslint-watch": "^6.0.1",
+    "flow-bin": "^0.119.1",
+    "polished": "^4.1.1",
+    "prettier-eslint": "^9.0.1"
+  },
+  "dependencies": {
+    "@jaredpalmer/after": "^3.1.3",
+    "dat.gui": "^0.7.7",
+    "express": "^4.17.1",
+    "gsap": "^3.6.1",
+    "razzle": "3.1.8",
+    "react": "^17.0.2",
+    "react-dat-gui": "^4.0.3",
+    "react-dom": "^17.0.2",
+    "react-hammerjs": "^1.0.1",
+    "react-helmet": "^6.0.0",
+    "react-router-dom": "^5.2.0",
+    "react-three-fiber": "^5.3.22",
+    "styled-components": "^5.0.1",
+    "three": "^0.126.1",
+    "webpack-node-externals": "1.7.2"
+  }
+}
